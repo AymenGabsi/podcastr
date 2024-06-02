@@ -1,7 +1,7 @@
 "use client";
+
 import { sidebarLinks } from "@/constants";
 import { cn } from "@/lib/utils";
-import { Section } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
@@ -11,7 +11,7 @@ const LeftSidebar = () => {
   const router = useRouter();
 
   return (
-    <Section className="left_sidebar">
+    <section className="left_sidebar">
       <nav className="flex flex-col gap-6">
         <Link
           href="/"
@@ -44,7 +44,7 @@ const LeftSidebar = () => {
           );
         })}
       </nav>
-    </Section>
+    </section>
   );
 };
 
